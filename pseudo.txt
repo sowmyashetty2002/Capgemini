@@ -1,0 +1,6 @@
+
+Pseudo random algorithms are used to generate sequences of numbers
+ that appear to be random but are actually generated using mathematical algorithms. 
+These algorithms are used to generate secret keys for encryption and authentication, to 
+reduce interference between devices and to protect against malicious attacks. 
+Pseudo random algorithms are also used in gaming applications to generate unpredictable results.

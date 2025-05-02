@@ -1,0 +1,94 @@
+makefile
+
+CC=gcc
+CFLAGS=-Wall -g
+LIBS=-lm
+all: node.c nodemain.c
+           $(CC) $(CFLAGS) node.c nodemain.c -o node.out
+clean:
+        rm -rf node.out:w
+
+sowmya@GESLMP22VVM1:~/day17$ make
+gcc -Wall -g node.c nodemain.c -o node.out
+sowmya@GESLMP22VVM1:~/day17$ ./node.out
+
+enter the number of student
+2
+enter the rol number of a student 1
+101
+enter the name of student 1
+:sowmya
+enter the age 1
+20
+enter the rol number of a student 2
+102
+enter the name of student 2
+:namitha
+enter the age 2
+22
+
+ student 1:rollnumber--101       name--sowmya    age--20
+ student 2:rollnumber--102       name--namitha   age--22
+enter the element to be insert
+103
+vinu
+34
+
+ insert before rno101
+
+ student 1:rollnumber--103       name--vinu      age--34
+ student 2:rollnumber--101       name--sowmya    age--20
+ student 3:rollnumber--102       name--namitha   age--22
+
+ delte for roll:101
+
+ student 1:rollnumber--103       name--vinu      age--34
+ student 2:rollnumber--102       name--namitha   age--22
+sowmya@GESLMP22VVM1:~/day17$
+
+
+valgrind
+
+sowmya@GESLMP22VVM1:~/day17$ valgrind ./node.out
+==88== Memcheck, a memory error detector
+==88== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==88== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==88== Command: ./node.out
+==88==
+==88== error calling PR_SET_PTRACER, vgdb might block
+enter the number of student
+1
+enter the rol number of a student 1
+101
+enter the name of student 1
+:sowmya
+enter the age 1
+34
+
+ student 1:rollnumber--101       name--sowmya    age--34
+enter the element to be insert
+102
+racchu
+34
+
+ insert before rno101
+
+ student--1     rollno---102    name--racchu     age--34
+ student--2     rollno---101    name--sowmya     age--34
+
+ student 1:rollnumber--102       name--racchu    age--34
+ student 2:rollnumber--101       name--sowmya    age--34
+
+ delte for roll:101
+
+ student 1:rollnumber--102       name--racchu    age--34
+==88==
+==88== HEAP SUMMARY:
+==88==     in use at exit: 0 bytes in 0 blocks
+==88==   total heap usage: 4 allocs, 4 frees, 1,104 bytes allocated
+==88==
+==88== All heap blocks were freed -- no leaks are possible
+==88==
+==88== For lists of detected and suppressed errors, rerun with: -s
+==88== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+sowmya@GESLMP22VVM1:~/day17$

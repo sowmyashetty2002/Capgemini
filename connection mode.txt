@@ -1,0 +1,26 @@
+Connection Modes
+A Bluetooth device in the Connection state can be in any of the four
+ following modes: Active, Hold, Sniff and Park mode.
+
+Active Mode: In the active mode, the Bluetooth unit actively participates on the channel.
+ The master schedules the transmission based on traffic demands to and from the different 
+slaves. In addition, it supports regular transmissions to keep slaves synchronized to the channel.
+ Active slaves listen in the master-to-slave slots for packets. If an active slave is not addressed,
+ it may sleep until the next new master transmission.
+
+
+Sniff Mode: Devices synchronized to a piconet can enter power-saving modes 
+in which device activity is lowered. In the SNIFF mode, a slave device listens to the 
+piconet at reduced rate, thus reducing its duty cycle. The SNIFF interval is programmable 
+and depends on the application. It has the highest duty cycle (least power efficient ) of all 3 
+power saving modes (sniff, hold & park).
+
+Hold Mode: Devices synchronized to a piconet can enter power-saving modes 
+in which device activity is lowered. The master unit can put slave units into HOLD mode, 
+where only an internal timer is running. Slave units can also demand to be put into HOLD mode.
+ Data transfer restarts instantly when units transition out of HOLD mode.
+
+
+Park Mode: In the PARK mode, a device is still synchronized to the piconet but
+ does not participate in the traffic. Parked devices have given up their MAC 
+address and occasional listen to the traffic of the master to re-synchronize and check on broadcast messages.

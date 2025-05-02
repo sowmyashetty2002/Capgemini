@@ -1,0 +1,3 @@
+Adaptive frequency hopping (AFH) means that the communicating devices are continuously
+ monitoring their environment for interference and are continuously changing the channel 
+map to address the interference. Note: AFH is a requirement for using TX power over +10 dBm.

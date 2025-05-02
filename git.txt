@@ -1,0 +1,8 @@
+git clone 
+git checkout -b <bname>
+"do the changes"
+git add filename
+git commit
+ >> Enter proper message
+git push origin <bname>
+

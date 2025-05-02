@@ -1,0 +1,40 @@
+A guard band is a narrow frequency range that separates two ranges of wider frequency. This ensures that simultaneously used communication channels do not experience interference, which would result in decreased quality for both transmissions.
+
+
+
+
+
+It is used in frequency-division multiplexing. It may be used in both wired or wireless communications, so that adjacent frequency bands on the same media can avoid interference. The spectrum can also be licensed for low-power devices such as a private mobile phone network.
+
+Bluetooth chan- nels use a Frequency-Hop/Time-Division-Duplex (FH/TDD) scheme in which the time is divided into 625–µsec intervals called slots. The master-to-slave transmission starts in even- numbered slots, while the slave-to-master transmission starts in odd-numbered slots.
+
+
+
+The guard bands at the bottom and front end of the Bluetooth frequency range are 2 MHz 
+and 3.5 MHz wide, respectively. These guard bands are set aside to protect adjacent frequency bands from
+ interference. The 2 MHz guard band at the bottom end of the frequency range is used to protect the 2.4 GHz 
+ISM band, while the 3.5 MHz guard band at the front end of the frequency range is used to protect the 5 GHz 
+ISM band.
+
+
+GSK is a digital modulation technique which uses Gaussian filter to modulate the frequency-shift
+ keying (FSK) signal. It is widely used in many low-power, short-range wireless communication systems, 
+such as Bluetooth and Zigbee. The Gaussian filter is used to reduce the spectral width of the signal,
+ thus reducing the power transmitted, as well as improving the signal-to-noise ratio. GFSK is relatively 
+easy to implement and provides good immunity to interference and multipath fading. 
+It is also widely used for low data rate applications, such as remote control and sensor networks.
+
+
+
+The
+Central starts its transmission in even-numbered time slots only.
+
+The Central transmits a beacon in every even-numbered time slot 
+to announce the beginning of the data transmission. It then transmits data packets in the following odd-numbered time slots. The Central will also send an acknowledgment packet after receiving a data packet from a peripheral node, which will be sent in the next even-numbered time slot.
+what is beacon 
+
+A beacon is a signal that is broadcast by a central device, such as a router or access point, in order to announce its presence on a network. It is used to advertise the availability of a network and to provide information and services to other devices on the network.
+
+
+
+The Central transmits data packets in the odd-numbered time slots so that the acknowledgments can be sent in the even-numbered time slots. This way, the Central can ensure that acknowledgments will be sent in an orderly fashion without interfering with the data transmission.

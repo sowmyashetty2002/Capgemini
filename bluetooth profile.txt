@@ -1,0 +1,13 @@
+service access points in bluetooth
+
+1. Hands-Free Profile (HFP): Allows a Bluetooth device to be used as a hands-free headset for a mobile phone.
+
+2. Advanced Audio Distribution Profile (A2DP): Used to stream audio from one device to another over a Bluetooth connection, such as music from a smartphone to a wireless speaker.
+
+3. Audio/Video Remote Control Profile (AVRCP): Allows a device to control the playback of audio or video on another device, such as a TV remote.
+
+4. Human Interface Device Profile (HID): This profile allows a Bluetooth device to act as a mouse or keyboard, allowing control of a computer from a distance.
+
+5. Object Push Profile (OPP): Allows two devices to exchange data such as pictures, contacts, and calendar events.
+
+6. Personal Area Network Profile (PAN): This profile allows two devices to create an ad-hoc network, allowing them to share an Internet connection.
