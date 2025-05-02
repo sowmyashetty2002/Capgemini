@@ -1,0 +1,11 @@
+[17:28] Trainer
+https://www.tutorialspoint.com/cprogramming/index.htm
+C Tutorial
+C Tutorial,  C programming is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratori
+
+
+
+https://www.geeksforgeeks.org/structure-member-alignment-padding-and-data-packing/
+
+
+https://www.geeksforgeeks.org/structure-member-alignment-padding-and-data-packing/
